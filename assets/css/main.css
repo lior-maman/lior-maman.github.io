@@ -260,6 +260,8 @@ input, select, textarea {
 
 /* Row */
 
+
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -1730,6 +1732,7 @@ input, select, textarea {
 
 	section, article {
 		margin-bottom: 3em;
+		/*background-color: #41484c; */
 	}
 
 		section > :last-child,
@@ -1796,6 +1799,7 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		padding-left: 1em;
+		
 	}
 
 		ul li {
