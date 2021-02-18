@@ -2222,7 +2222,7 @@ input, select, textarea {
 		}
 
 			#main > section.dark {
-				background-color: #ddd;
+				color: #ddd;
 				color: rgba(83, 15, 15, 0.75);
 			}
 
@@ -2264,7 +2264,7 @@ input, select, textarea {
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #81918E;
 			}
 
 /* Wide */
