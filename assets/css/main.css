@@ -2251,6 +2251,7 @@ input, select, textarea {
 			}
 
 			#main > section.one {
+				color: #000;
 				background-color: #f5fafa;
 				background-image: url("images/banner.jpg");
 			}
