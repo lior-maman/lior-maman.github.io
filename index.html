@@ -14,19 +14,18 @@
       }
       .hero-card {
         border-radius: 20px;
-        transition: transform 0.3s;
       }
       .project-link {
         border-radius: 12px;
-        border: none;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
+        border: 1px solid #dee2e6;
+        background-color: white;
+        color: #333;
+        transition: all 0.3s ease; /* מעבר הדרגתי על הכל */
       }
       .project-link:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        background-color: #f8f9fa; /* שינוי רקע עדין */
+        border-color: #adb5bd; /* שינוי גבול עדין */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* צל קטן בלבד */
       }
     </style>
   </head>
