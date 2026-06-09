@@ -3,7 +3,8 @@
 /* --- הגדרת פונט גלובלית ואיפוס בסיסי לכפתורים --- */
 body,
 .hero-card,
-.project-link {
+.project-link,
+.hero-card a {
   font-family: "Lato", sans-serif !important;
 }
 
@@ -17,43 +18,52 @@ body,
   text-align: center;
   width: 100%;
   max-width: 460px;
-  margin: 0 auto; /* מבטיח מרכוז מושלם */
+  margin: 0 auto;
 }
 
-/* --- עיצוב יציב ומקצועי לכפתורי הקישורים --- */
+/* --- עיצוב יציב ומקצועי לכפתורי הקישורים (מצב רגיל) --- */
+.hero-card a.project-link,
 .project-link {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 1rem;
   border-radius: 14px;
   border: 2px solid var(--box-border) !important;
-  background-color: var(--box-bg) !important;
-  color: var(--text-main) !important;
+  background-color: var(--box-bg) !important; /* רקע לבן נעול */
+  color: var(--text-main) !important; /* טקסט כהה נעול */
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none !important;
-  box-sizing: border-box; /* מונע מהגבול של ה-2 פיקסלים לעוות את רוחב הכפתור */
+  box-sizing: border-box;
   transition: var(--transition-smooth) !important;
 }
 
-/* --- אפקט הובר רגוע, משמעותי ומותאם למותג --- */
-.project-link:hover {
-  background-color: rgba(59, 130, 246, 0.05) !important;
-  border-color: var(--color-primary) !important;
-  color: var(--color-primary-dark) !important;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+/* --- נעילת מצבי הובר, פוקוס ואקטיב - מונע היעלמות הטקסט ב-100% --- */
+.hero-card a.project-link:hover,
+.hero-card a.project-link:focus,
+.hero-card a.project-link:active,
+.project-link:hover,
+.project-link:focus {
+  background-color: rgba(59, 130, 246, 0.05) !important; /* רקע משתנה קלות */
+  border-color: var(--color-primary) !important; /* גבול כחול */
+  color: var(
+    --color-primary-dark
+  ) !important; /* טקסט כחול כהה - בחיים לא לבן! */
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1) !important;
+  text-decoration: none !important;
 }
 
 /* --- אנימציה עדינה לאייקונים בתוך הכפתור --- */
 .project-link .icon {
   margin-right: 10px;
   display: inline-block;
-  font-style: normal; /* מונע מהאמוג'י/אייקון לקבל נטייה (italic) בטעות */
+  font-style: normal;
   transition: var(--transition-smooth) !important;
 }
 
+.hero-card a.project-link:hover .icon,
 .project-link:hover .icon {
   transform: scale(1.15);
 }
