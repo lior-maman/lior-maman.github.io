@@ -1,18 +1,41 @@
-body {
-  background-color: #f8f9fa;
-}
+/* --- כרטיס פרופיל ראשי --- */
 .hero-card {
-  border-radius: 20px;
+  border-radius: 24px;
+  background: var(--box-bg);
+  border: 1px solid var(--box-border);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
 }
+
+/* --- כפתורי הקישורים לכרטיס הביקור --- */
 .project-link {
-  border-radius: 12px;
-  border: 1px solid #dee2e6;
-  background-color: white;
-  color: #333;
-  transition: all 0.3s ease; /* מעבר הדרגתי על הכל */
+  border-radius: 14px;
+  border: 2px solid var(--box-border);
+  background-color: var(--box-bg);
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: var(--transition-smooth);
 }
+
+/* אפקט הובר משמעותי: שינוי רקע לכחול מותג וטקסט ללבן */
 .project-link:hover {
-  background-color: #f8f9fa; /* שינוי רקע עדין */
-  border-color: #adb5bd; /* שינוי גבול עדין */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* צל קטן בלבד */
+  color: #ffffff !important;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
+}
+
+/* אנימציה עדינה לאייקון בריחוף */
+.project-link span {
+  margin-right: 8px;
+  transition: var(--transition-smooth);
+  display: inline-block;
+}
+
+.project-link:hover span {
+  transform: scale(1.2);
 }
